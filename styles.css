@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    padding: 60px 20px;
+    background: linear-gradient(45deg, #ff004d, #00ccff);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 0 0 15px #00ccff;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.links, .music, .about {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #00ccff;
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ccff;
+}
+
+.youtube {
+    background: #ff0000;
+    color: #fff;
+}
+
+.tiktok {
+    background: #000;
+    color: #00f2ea;
+}
+
+.spotify {
+    background: #1db954;
+    color: #fff;
+}
+
+.donate {
+    background: #ff004d;
+    color: #fff;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 20px;
+    background: #000;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}

@@ -7,9 +7,15 @@ body {
 }
 
 header {
-    padding: 60px 20px;
+    padding: 70px 20px;
     background: linear-gradient(45deg, #ff004d, #00ccff);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.logo {
+    max-width: 150px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 h1 {
@@ -23,7 +29,7 @@ p {
     font-size: 1.3em;
 }
 
-.links, .music, .about {
+.main-buttons, .links, .music, .support, .bio {
     padding: 50px 20px;
 }
 
@@ -33,7 +39,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.social-buttons {
+.button-container, .social-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -53,34 +59,35 @@ h2 {
     box-shadow: 0 0 20px #00ccff;
 }
 
-.youtube {
-    background: #ff0000;
-    color: #fff;
-}
-
-.tiktok {
-    background: #000;
-    color: #00f2ea;
-}
-
-.spotify {
-    background: #1db954;
-    color: #fff;
-}
-
-.donate {
+.main-button {
     background: #ff004d;
     color: #fff;
 }
+
+.youtube { background: #ff0000; color: #fff; }
+.tiktok { background: #000; color: #00f2ea; }
+.instagram { background: #e1306c; color: #fff; }
+.spotify { background: #1db954; color: #fff; }
+.ytmusic { background: #ff0000; color: #fff; }
+.telegram { background: #0088cc; color: #fff; }
+.facebook { background: #3b5998; color: #fff; }
+.pinterest { background: #e60023; color: #fff; }
+.threads { background: #000; color: #fff; }
+.amazon { background: #ff9900; color: #fff; }
+.deezer { background: #feaa2d; color: #fff; }
+.boosty { background: #f28c38; color: #fff; }
+.soundcloud { background: #ff5500; color: #fff; }
+.audiomack { background: #ffa200; color: #fff; }
+.donate { background: #ff004d; color: #fff; }
 
 iframe {
     max-width: 100%;
     border-radius: 10px;
 }
 
-.about p {
-    max-width: 600px;
-    margin: 0 auto;
+.bio p, .support p {
+    max-width: 700px;
+    margin: 20px auto;
     line-height: 1.6;
 }
 
@@ -90,15 +97,19 @@ footer {
     font-size: 0.9em;
 }
 
+footer a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 600px) {
-    h1 {
-        font-size: 2.5em;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    .button {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 1.8em; }
+    p { font-size: 1.1em; }
+    .button { padding: 12px 25px; font-size: 1em; }
+    .logo { max-width: 120px; }
 }

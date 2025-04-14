@@ -1,4 +1,4 @@
-// Анимация для кнопок
+// Анимация кнопок
 document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('mouseover', () => {
         button.style.boxShadow = '0 0 25px #00ccff';
@@ -8,11 +8,16 @@ document.querySelectorAll('.button').forEach(button => {
     });
 });
 
-// Плавное появление заголовка
+// Плавное появление заголовка и лого
 window.addEventListener('load', () => {
-    document.querySelector('h1').style.opacity = '0';
-    setTimeout(() => {
-        document.querySelector('h1').style.transition = 'opacity 1s';
-        document.querySelector('h1').style.opacity = '1';
-    }, 500);
+    const elements = [document.querySelector('h1'), document.querySelector('.logo')];
+    elements.forEach(el => {
+        if (el) {
+            el.style.opacity = '0';
+            setTimeout(() => {
+                el.style.transition = 'opacity 1s';
+                el.style.opacity = '1';
+            }, 500);
+        }
+    });
 });
